@@ -22,15 +22,9 @@ if response.status_code == 200:
 				lngt= '-46.633480'
 		else:
     			print(each_resp)
-	mapp = requests.get('https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyBvz9DkTVjFdrYuYZu8ytPp9q-uk5i3gYg&latlng='+str(lat)+','+lngt)
-	get_map = mapp.json()
+	#mapp = requests.get('https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyBvz9DkTVjFdrYuYZu8ytPp9q-uk5i3gYg&latlng='+str(lat)+','+lngt)
+	#et_map = mapp.json()
 
-	print(get_map)
+	#print(get_map)
 else:
 	print('Invalid')
-
-
-#line in test.split('\n'):
-#     if not line.startswith('%'):
-#       print(line)
- 
