@@ -7,6 +7,7 @@
 
 **Informant** é uma ferramenta open source desenvolvida em python3 
 para  auxiliar na fase de reconhecimento do pentest.
+Também em desenvolvimento a função de auditoria para checklist de diretório padrão de instalação.
 
 A ferramenta funciona online e consome as APIs do [Hacker Target](https://hackertarget.com/).
 As APIs são de uso limitido a 100 chamadas por dia para cada IP.
