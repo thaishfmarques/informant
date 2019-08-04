@@ -14,6 +14,3 @@ def whois(get_input):
 				pass
 	else:
 		print('Invalid')
-
-
-
