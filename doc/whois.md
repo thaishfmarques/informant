@@ -13,7 +13,7 @@ O protocolo whois foi baseado no protocolo finger em 1977, durante a era inicial
 Para o projeto foi utilizada a **API** whois do **HackerTarget** [^4].
 
 
-[^1]: [Whois](https://en.wikipedia.org/wiki/WHOIS) _(em inglês)_
-[^2]: [TCP](https://www.ietf.org/rfc/rfc0793) _(em inglês)_
+[^1]: [Whois](https://en.wikipedia.org/wiki/WHOIS) *(em inglês)*
+[^2]: [TCP](https://www.ietf.org/rfc/rfc0793) *(em inglês)*
 [^3]: [ARPANET](https://pt.wikipedia.org/wiki/ARPANET)
-[^4]: [API whois](https://hackertarget.com/whois-lookup/) _(em inglês)_
+[^4]: [API whois](https://hackertarget.com/whois-lookup/) *(em inglês)*

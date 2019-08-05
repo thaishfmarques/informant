@@ -53,6 +53,13 @@ A ferramenta foi desenvolvida em python3, porém, irá funcionar corretamente em
 A ferramenta foi desenvolvida sob a licença MIT  
 Detalhes: [LICENSE](https://github.com/thaishfmarques/informant/blob/master/LICENSE)
 
+ 
+## Disclaimer
+
+O intuito dessa documentação é acadêmica e deve ser utilizado exclusivamente para este fim. Invasão de dispositivos é crime e está previso no Art. 154-A  do Decreto-Lei nº 2.848.  
+A utilização da ferramenta deve ser feita somente em rede local própria.
+
+
 ## Author
 : @thaishfmarques  
 
