@@ -4,13 +4,28 @@
 # author: @thaishfmarques
 
 from os import system,name
+import platform
+import subprocess  # For executing a shell command
 from time import sleep
 from socket import gethostname, gethostbyname
-import platform
+
 import whois, geoip, portscan 
 
 
 VERSION = 'v0.5'
+
+
+# funcao para limpar a tela - multiplataforma
+def clear():
+    # Clear command as function of OS
+    if platform.system().lower()=='windows':
+        command = 'cls' 
+    else: 
+        command = 'clear'
+    return subprocess.call(command) == 0
+
+
+
 
 # Define banner principal do script
 def banner():
@@ -29,7 +44,7 @@ def banner():
 def menu_splash(menu_option):
     while True:
         # limpa o console
-        system('clear')
+        clear()
 
         banner()
         
