@@ -56,7 +56,7 @@ Detalhes: [LICENSE](https://github.com/thaishfmarques/informant/blob/master/LICE
  
 ## Disclaimer
 
-O intuito dessa documentação é acadêmica e deve ser utilizado exclusivamente para este fim. Invasão de dispositivos é crime e está previso no Art. 154-A  do Decreto-Lei nº 2.848.  
+O intuito desse script é acadêmico e deve ser utilizado exclusivamente para este fim. Invasão de dispositivos é crime e está previso no Art. 154-A do Decreto-Lei nº 2.848.  
 A utilização da ferramenta deve ser feita somente em rede local própria.
 
 
