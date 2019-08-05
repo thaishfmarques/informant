@@ -15,6 +15,3 @@ def geoip(hostname):
 	else:
 		print('Invalid')
 
-# TODO: get another use for this google maps geocoding api
-# TODO: This is MY key. Please get this out of here. DO NOT FORGET
-#mapp = requests.get('https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyBvz9DkTVjFdrYuYZu8ytPp9q-uk5i3gYg&latlng='+str(lat)+','+lngt)
