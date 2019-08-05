@@ -17,10 +17,10 @@ As APIs são de uso limitado a 100 chamadas por dia para cada IP.
 ### Tela Inicial
 - **Online Tools**
 	* Ferramentas para coleta de informações
-		+ _whois_
-		+ _geoip_
-		+ _portscan_
-		+ _ghdb search_ *** _IN DEVELOPMENT_
+		+ [_whois_](https://github.com/thaishfmarques/informant/blob/master/doc/whois.md)
+		+ [_geoip_](https://github.com/thaishfmarques/informant/blob/master/doc/geoip.md)
+		+ [_portscan_](https://github.com/thaishfmarques/informant/blob/master/doc/portscan.md)
+		+ [_ghdb search_]() *** _IN DEVELOPMENT_
 	
 - **Offline Tools** - _IN DEVELOPMENT_ 
 	* Ferramenta para auditoria de sistemas
@@ -33,19 +33,28 @@ cd informant
 pip install -r requirements.txt
 python3 informant.py
 ```
+## Utilização
+
+A exibição da ferramenta é básica e exibe números com as opções disponíveis
 
 ## Compatibilidade
 
 A ferramenta foi desenvolvida em python3, porém, irá funcionar corretamente em sistemas *GNU/Linux*
 
-**OS testados:**
+**OS testados:**  
 * Ubuntu 18.04
 
+## Versão
+* v0.1 
+	+  _in development (08/2019)_
+
 ## License
-A ferramenta foi desenvolvida sob a licença MIT 
+
+A ferramenta foi desenvolvida sob a licença MIT  
 Detalhes: [LICENSE](https://github.com/thaishfmarques/informant/blob/master/LICENSE)
 
 ## Author
-: @thaishfmarques
+
+: @thaishfmarques  
 > Written with [StackEdit](https://stackedit.io/).
 
