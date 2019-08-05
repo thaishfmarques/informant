@@ -10,7 +10,7 @@ para  auxiliar na fase de reconhecimento do pentest.
 Também em desenvolvimento a função de auditoria para checklist de diretório padrão de instalação.
 
 A ferramenta funciona online e consome as APIs do [Hacker Target](https://hackertarget.com/).
-As APIs são de uso limitido a 100 chamadas por dia para cada IP.
+As APIs são de uso limitado a 100 chamadas por dia para cada IP.
 
 ## Funções
 
@@ -20,10 +20,11 @@ As APIs são de uso limitido a 100 chamadas por dia para cada IP.
 		+ _whois_
 		+ _geoip_
 		+ _portscan_
+		+ _ghdb search_ *** _IN DEVELOPMENT_
 	
 - **Offline Tools** - _IN DEVELOPMENT_ 
 	* Ferramenta para auditoria de sistemas
-		+ checklist de instalação
+		+ _checklist de instalação_
 
 ## Instalação
 ```
@@ -33,6 +34,16 @@ pip install -r requirements.txt
 python3 informant.py
 ```
 
+## Compatibilidade
+
+A ferramenta foi desenvolvida em python3, porém, irá funcionar corretamente em sistemas *GNU/Linux*
+
+**OS testados:**
+* Ubuntu 18.04
+
+## License
+A ferramenta foi desenvolvida sob a licença MIT 
+Detalhes: [LICENSE](https://github.com/thaishfmarques/informant/blob/master/LICENSE)
 
 ## Author
 : @thaishfmarques
