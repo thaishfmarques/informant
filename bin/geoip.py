@@ -14,4 +14,3 @@ def geoip(hostname):
 		print(response.text)
 	else:
 		print('Invalid')
-
