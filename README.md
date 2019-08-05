@@ -35,11 +35,11 @@ python3 informant.py
 ```
 ## Utilização
 
-A exibição da ferramenta é básica e exibe números com as opções disponíveis
+_glossario in development_
 
 ## Compatibilidade
 
-A ferramenta foi desenvolvida em python3, porém, irá funcionar corretamente em sistemas *GNU/Linux*
+A ferramenta foi desenvolvida em python3, porém, irá funcionar inicialmente só em sistemas *GNU/Linux*
 
 **OS testados:**  
 * Ubuntu 18.04
