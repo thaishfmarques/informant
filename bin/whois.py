@@ -1,15 +1,19 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+#
+# author: @thaishfmarques
 
 import requests
+from os import system
 
 # funcao que consome a API Whois e fornece dados
-def whois(get_input):
-	response = requests.get('http://api.hackertarget.com/whois/?q=' + get_input)
+def whois(hostname):
+	response = requests.get('http://api.hackertarget.com/whois/?q=' + hostname)
 	test = response.text
 	if response.status_code == 200:
 		for line in test.split('\n'):
 			if not line.startswith('%'):
-				print(line) 
+				print(line)
 			else:
 				pass
 	else:

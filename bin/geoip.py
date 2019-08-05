@@ -1,16 +1,17 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+#
+# author: @thaishfmarques
 
 import requests
-	
-#get_input = '82.135.139.155'
 
 # funcao que traz informacoes do geoip
-def geoip(get_input):
-	response = requests.get('http://api.hackertarget.com/geoip/?q=' + get_input)
-	get_response = response.text
+def geoip(hostname):
+	response = requests.get('http://api.hackertarget.com/geoip/?q=' + hostname)
+	#response = response.text
 	if response.status_code == 200:
-		for each_resp in get_response.split('\n'):
-			print(each_resp)
+		
+		print(response.text)
 	else:
 		print('Invalid')
 
