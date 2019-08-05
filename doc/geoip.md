@@ -7,5 +7,5 @@ A **geolocalização de IP** [^1] é uma ferramenta de localização de um ender
 O uso da **API** do **HackerTarget** [^2] é recomendado para pesquisas pontuais que envolvem testes de segurança e solução de problemas, dado a limitação de 100 pesquisas por dia.
 
 
-[^1]: [Geolocalização](https://en.wikipedia.org/wiki/Geolocation) _em inglês_
-[^2]: [API GeoIP](https://hackertarget.com/geoip-ip-location-lookup/) _em inglês_
+[^1]: [Geolocalização](https://en.wikipedia.org/wiki/Geolocation) *em inglês*
+[^2]: [API GeoIP](https://hackertarget.com/geoip-ip-location-lookup/) *em inglês*

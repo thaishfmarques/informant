@@ -54,7 +54,8 @@ A ferramenta foi desenvolvida sob a licença MIT
 Detalhes: [LICENSE](https://github.com/thaishfmarques/informant/blob/master/LICENSE)
 
 ## Author
-
 : @thaishfmarques  
+
+
 > Written with [StackEdit](https://stackedit.io/).
 
