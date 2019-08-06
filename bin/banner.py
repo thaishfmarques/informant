@@ -9,10 +9,10 @@ import subprocess  # For executing a shell command
 from time import sleep
 from socket import gethostname, gethostbyname
 
-import whois, geoip, portscan 
+import whois, geoip, portscan
 
 
-VERSION = 'v0.5'
+VERSION = 'v0.7'
 
 
 # funcao para limpar a tela - multiplataforma
@@ -23,8 +23,6 @@ def clear():
     else: 
         command = 'clear'
     return subprocess.call(command) == 0
-
-
 
 
 # Define banner principal do script
@@ -42,39 +40,43 @@ def banner():
 
 # menu principal da aplicação
 def menu_splash(menu_option):
-    while True:
+    try:
+        while True:
         # limpa o console
-        clear()
+            clear()
 
-        banner()
-        
-        print( '''
-        [1] Online Tools 
-            [Online tools as whois, port scanning, geoip]
-        [2] Offline Tools  /!\\
-            [Checklist auditing tool] [-- in development --]
-        [3] sair\n'''
-        )
-        print('Development version in: {} '.format(VERSION).rjust(80, ' '))
-        print('-'.rjust(80, '-'))
-        menu = input('Choose: ')
-        if menu == '1':
-            menu_option=''
-            menu_online(menu_option)
+            banner()
+            
+            print( '''
+            [1] Online Tools 
+                [Online tools as whois, port scanning, geoip]
+            [2] Offline Tools  /!\\
+                [Checklist auditing tool] [-- in development --]
+            [3] sair\n'''
+            )
+            print('Development version in: {} '.format(VERSION).rjust(80, ' '))
+            print('-'.rjust(80, '-'))
+            menu = input('Choose: ')
+            if menu == '1':
+                menu_option=''
+                menu_online(menu_option)
 
-        elif menu == '2':
-            print('Sorry, this is still in development...')
-            sleep(1.6)        
-        elif menu == '3':
-            exit()
-        else:
-            print('Invalid option.')
-            sleep(0.9)
+            elif menu == '2':
+                print('Sorry, this is still in development...')
+                sleep(1.6)        
+            elif menu == '3':
+                exit()
+            else:
+                print('Invalid option.')
+                sleep(0.9)
+    except KeyboardInterrupt as kboard:
+        print('\nExiting...')
+        sleep(0.3)
 
 def menu_online(menu_option):
     hostname = input('Host: ')
     while True:
-        system('clear')
+        clear()
         banner()
         print('''
         [1] whois
@@ -87,7 +89,6 @@ def menu_online(menu_option):
         print('Development version in: {} '.format(VERSION).rjust(80, ' '))
         print('-'.rjust(80, '-'))
         menu_option = input('Choose: ')
-        print('\n')
         
         if menu_option == '1':
             whois.whois(hostname)
@@ -95,17 +96,17 @@ def menu_online(menu_option):
 
         elif menu_option == '2':
             geoip.geoip(hostname)
-            back = input('Press <enter> to return')
+            back = input('\nPress <enter> to return')
 
         elif menu_option == '3':
             portscan.portscan(hostname)
-            back = input('Press <enter> to return')
+            back = input('\nPress <enter> to return')
 
         elif menu_option == '4':
             hostname = input('Host: ')
 
         elif menu_option == '5':
-            print('Returning...')
+            print('\nReturning...')
             sleep(0.9)
             menu_splash(menu_option)
 
@@ -119,7 +120,7 @@ def menu_online(menu_option):
 
 def menu_offline(menu_option):
     while True:
-        system('clear')
+        clear()
         banner()
         print('''
         [1] installation checklist

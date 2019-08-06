@@ -4,7 +4,6 @@
 # author: @thaishfmarques
 
 import requests
-from os import system
 
 # funcao que consome a API Whois e fornece dados
 def whois(hostname):

@@ -4,10 +4,9 @@
 # author: @thaishfmarques
 
 import requests
-from os import system
 
-def portscan(ip_address):
-    response = requests.get('http://api.hackertarget.com/nmap/?q={}'.format(ip_address))
+def portscan(hostname):
+    response = requests.get('http://api.hackertarget.com/nmap/?q={}'.format(hostname))
     scan = response.text
 
     print('\n{}'.format(scan))

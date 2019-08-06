@@ -3,3 +3,6 @@ bin/__pycache__/geoip.cpython-36.pyc
 bin/__pycache__/portscan.cpython-36.pyc
 bin/__pycache__/whois.cpython-36.pyc
 .todomaps
+bin/__pycache__/reverseip.cpython-36.pyc
+bin/__pycache__/externalip.cpython-36.pyc
+bin/__pycache__/requests.cpython-36.pyc
