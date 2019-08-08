@@ -87,6 +87,7 @@ def menu_online(menu_option):
         menu_option = input('Choose: ')
         
         if menu_option == '1':
+            
             whois.whois(hostname)
             back = input('\nPress <enter> to return')
 
@@ -113,24 +114,3 @@ def menu_online(menu_option):
             print('Invalid option.')
             sleep(0.9)
 
-
-def menu_offline(menu_option):
-    while True:
-        clear()
-        banner()
-        print('''
-        [1] installation checklist
-        [2] sair\n''')
-        print('Development version in: {} '.format(VERSION).rjust(80, ' '))
-        print('-'.rjust(80, '-'))
-
-        menu_option = input('Choose: ')
-
-        if menu_option == '1':
-            print('Sorry, this is still in development...')
-            sleep(1.6)  
-        elif menu_option == '2':
-            exit()
-        else:
-            print('Invalid option.')
-            sleep(0.9)
