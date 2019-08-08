@@ -49,9 +49,9 @@ def menu_splash(menu_option):
             
             print( '''
             [1] Online Tools 
-                [Online tools as whois, port scanning, geoip]
-            [2] Offline Tools  /!\\
-                [Checklist auditing tool] [-- in development --]
+                [Online info gathering tool as whois, port scanning, geoip]
+            [-] GHDB Search
+                [search for google dorks]
             [3] sair\n'''
             )
             print('Development version in: {} '.format(VERSION).rjust(80, ' '))
@@ -59,11 +59,7 @@ def menu_splash(menu_option):
             menu = input('Choose: ')
             if menu == '1':
                 menu_option=''
-                menu_online(menu_option)
-
-            elif menu == '2':
-                print('Sorry, this is still in development...')
-                sleep(1.6)        
+                menu_online(menu_option)    
             elif menu == '3':
                 exit()
             else:
