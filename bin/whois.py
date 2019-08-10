@@ -5,7 +5,6 @@
 
 import requests
 
-# funcao que consome a API Whois e fornece dados
 def whois(hostname):
 	response = requests.get('http://api.hackertarget.com/whois/?q=' + hostname)
 	test = response.text

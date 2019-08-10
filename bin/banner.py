@@ -3,21 +3,23 @@
 #
 # author: @thaishfmarques
 
-from os import system,name
+# system imports
 import platform
-import subprocess  # For executing a shell command
+import subprocess  # for executing a shell command
+from os import system,name 
 from time import sleep
-from socket import gethostname, gethostbyname
+from socket import gethostname
 
-import whois, geoip, portscan
-
-
-VERSION = 'v0.7'
+# local imports
+import whois, geoip, portscan # local source imports
 
 
-# funcao para limpar a tela - multiplataforma
+VERSION = 'v0.8'
+
+
+# clean console screen
+# TODO: Windows cls still not working 
 def clear():
-    # Clear command as function of OS
     if platform.system().lower()=='windows':
         command = 'cls' 
     else: 
@@ -25,10 +27,12 @@ def clear():
     return subprocess.call(command) == 0
 
 
-# Define banner principal do script
+# Defines the principal banner
 def banner():
+    # TODO: os_dist windows compatibility
     os_dist = platform.linux_distribution()
     os = '{} - {}'.format(platform.system(),' '.join(os_dist).title())
+
     print(''.center(80, '-'))
     print(' # Informant {} # '.format(VERSION).center(80, '-'))
     print(' an open source tool '.center(80, '-'))
@@ -38,21 +42,19 @@ def banner():
     print('local hostname: {} '.format(gethostname()).rjust(80, ' '))
 
 
-# menu principal da aplicação
+# defines the splash menu
 def menu_splash(menu_option):
     try:
         while True:
-        # limpa o console
             clear()
-
             banner()
             
             print( '''
             [1] Online Tools 
                 [Online info gathering tool as whois, port scanning, geoip]
-            [-] GHDB Search
-                [search for google dorks]
-            [3] sair\n'''
+            [2] Shodan Search
+                [search for devices with shodan]
+            [3] exit\n'''
             )
             print('Development version in: {} '.format(VERSION).rjust(80, ' '))
             print('-'.rjust(80, '-'))
@@ -60,6 +62,9 @@ def menu_splash(menu_option):
             if menu == '1':
                 menu_option=''
                 menu_online(menu_option)    
+            elif menu == '2':
+                menu_option=''
+                menu_shodan(menu_option)    
             elif menu == '3':
                 exit()
             else:
@@ -68,12 +73,14 @@ def menu_splash(menu_option):
     except KeyboardInterrupt as kboard:
         print('\nExiting...')
         sleep(0.3)
+        
 
 def menu_online(menu_option):
     hostname = input('Host: ')
     while True:
         clear()
         banner()
+
         print('''
         [1] whois
         [2] geoip
@@ -84,10 +91,10 @@ def menu_online(menu_option):
         print('[X]: {}'.format(hostname).ljust(80, ' '))
         print('Development version in: {} '.format(VERSION).rjust(80, ' '))
         print('-'.rjust(80, '-'))
+
         menu_option = input('Choose: ')
         
-        if menu_option == '1':
-            
+        if menu_option == '1':    
             whois.whois(hostname)
             back = input('\nPress <enter> to return')
 
@@ -114,3 +121,44 @@ def menu_online(menu_option):
             print('Invalid option.')
             sleep(0.9)
 
+
+# define menu call for shodan options
+def menu_shodan(menu_option):
+    while True:
+        clear()
+        banner()
+
+        print('SHODAN'.center(80,' '))
+        print('search engine for devices connected to the internet'.center(80,' '))
+        print('https://shodan.io - All Rights Reserved'.center(80,' '))
+
+        print('''
+        [1] SHODAN OPTIONS
+        [2] MORE OPTIONS
+        [3] BACK
+        [6] exit\n''')
+        
+        #print('[X]: {}'.format(hostname).ljust(80, ' '))
+        print('Development version in: {} '.format(VERSION).rjust(80, ' '))
+        print('-'.rjust(80, '-'))
+        menu_option = input('Choose: ')
+        
+        if menu_option == '1':
+            print('OPTONE')
+            back = input('\nPress <enter> to return')
+
+        elif menu_option == '2':
+            print('OPTTWO')
+            back = input('\nPress <enter> to return')
+
+        elif menu_option == '5':
+            print('\nReturning...')
+            sleep(0.9)
+            menu_splash(menu_option)
+
+        elif menu_option == '6':
+            exit()
+
+        else:
+            print('Invalid option.')
+            sleep(0.9)

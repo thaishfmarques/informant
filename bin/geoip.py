@@ -5,7 +5,6 @@
 
 import requests
 
-# funcao que traz informacoes do geoip
 def geoip(hostname):
 	response = requests.get('http://api.hackertarget.com/geoip/?q=' + hostname)
 	if response.status_code == 200:
