@@ -6,7 +6,7 @@
 from shodan import Shodan
 from shodan.cli.helpers import get_api_key
 
-api = Shodan(get_api_key())
+api = Shodan(get_api_key('KEY'))
 
 limit = 100
 counter = 0
