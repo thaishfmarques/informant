@@ -6,16 +6,17 @@
 import sys
 import os
 
+baixou = 'teste'
+
 while True:
     print('Do you want to save the file?')
     answer = input('[*]: ')
     if answer.lower() in ('y', 's', 'sim', 'yes'):
         with open('whois.txt', 'w') as f:
-            f.write('teste')
+            f.write(baixou)
+        print('BAIXOU')
         sys.exit()
 
-
-            
 
 
     elif answer.lower() in ('n', 'no', 'nao', 'não', 'nope', 'nein'):
