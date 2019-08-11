@@ -11,7 +11,7 @@ from time import sleep
 from socket import gethostname
 
 # local imports
-import whois, geoip, portscan # local source imports
+import whois, geoip, portscan, shodanz # local source imports
 
 
 VERSION = 'v0.8'
@@ -124,39 +124,44 @@ def menu_online(menu_option):
 
 # define menu call for shodan options
 def menu_shodan(menu_option):
-    while True:
+    api_key=''
+    print('To use the Shodan API, you will need an key generated in\n'
+          'https://account.shodan.io/'.center(80, ' '))
+    api_key = input('API key: ')
+    if len(api_key) < 25:
+        print('Invalid. Please insert a valid key.')
+        sleep(0.9)
+    else:
         clear()
         banner()
-
         print('SHODAN'.center(80,' '))
         print('search engine for devices connected to the internet'.center(80,' '))
         print('https://shodan.io - All Rights Reserved'.center(80,' '))
 
         print('''
-        [1] SHODAN OPTIONS
+        [1] basic search
         [2] MORE OPTIONS
         [3] BACK
-        [6] exit\n''')
-        
-        #print('[X]: {}'.format(hostname).ljust(80, ' '))
+        [4] exit\n''')
+
         print('Development version in: {} '.format(VERSION).rjust(80, ' '))
         print('-'.rjust(80, '-'))
         menu_option = input('Choose: ')
         
         if menu_option == '1':
-            print('OPTONE')
+            print('In development')
             back = input('\nPress <enter> to return')
 
         elif menu_option == '2':
-            print('OPTTWO')
+            print('In development')
             back = input('\nPress <enter> to return')
 
-        elif menu_option == '5':
+        elif menu_option == '3':
             print('\nReturning...')
             sleep(0.9)
             menu_splash(menu_option)
 
-        elif menu_option == '6':
+        elif menu_option == '4':
             exit()
 
         else:

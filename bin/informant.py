@@ -15,5 +15,11 @@ Demais comentários em português por questões acadêmicas
 
 import banner
 
-menu_option=''
-banner.menu_splash(menu_option)
+
+try:
+    menu_option=''
+    banner.menu_splash(menu_option)
+except KeyboardInterrupt as kboard:
+    print('\nExiting...')
+
+
