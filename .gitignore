@@ -1,3 +1,4 @@
 .todomaps
 *.pyc
 __pycache__
+bin/output.py

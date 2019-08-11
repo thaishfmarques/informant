@@ -23,4 +23,4 @@ while True:
         print('OK, NOPE')
         sys.exit()
     else:
-        print('Invalid.')
+        print('Invalid. ')
