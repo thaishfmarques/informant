@@ -22,20 +22,31 @@ A ferramenta funciona online e consome as APIs do [Hacker Target](https://hacker
 		+  [_portscan_](https://github.com/thaishfmarques/informant/blob/master/doc/portscan.md)
 
 	* Ferramenta de varredura de dispositivos conectados a rede
-		+  [_shodan search_](#) *** _IN DEVELOPMENT_
+		+  [_shodan search_](https://github.com/thaishfmarques/informant/blob/master/doc/shodan.md) *** _IN DEVELOPMENT_
 
 
 ## Instalação
+
+**Opcional:** Recomendável a instalação do virtualenv, uma ferramenta utilizada para criar ambientes isolados de Python.  
+// pip install virtualenv
+
 ```
-git clone https://github.com/thaishfmarques/informant.git ./informant
-cd informant
-pip install -r requirements.txt
-python3 informant.py
+$ git clone https://github.com/thaishfmarques/informant.git ./informant
+$ cd informant
+$ virtualenv <environment> **_opcional_
+$ source /path/to/ENV/bin/activate **_opcional_
+$ pip install -r requirements.txt
+$ python3 informant.py
 ```
+
+Para desabilitar o virtualenv 
+// deactivate
 
 ## Utilização
 
-[Glossario](#)  
+
+[Glossário](https://github.com/thaishfmarques/informant/blob/master/doc/glossario.md) de utilização da ferramenta.  
+Possui informações de funções, variáveis utilizadas e módulos instalados.
 
 ## Compatibilidade
 
@@ -52,6 +63,7 @@ A ferramenta foi desenvolvida em python3, porém, irá funcionar inicialmente s�
 	+  _in development (08/2019)_
 	+  _adding shodan search (09/08/2019)_
 	+  _adding glossary (12/08/2019)_
+	+  _final changes (13/08/2019)_
 
 
 ## License
