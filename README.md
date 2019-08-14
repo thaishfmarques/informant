@@ -29,7 +29,7 @@ A ferramenta funciona online e consome as APIs do [Hacker Target](https://hacker
 
 **Opcional:** Recomendável a instalação do virtualenv, uma ferramenta utilizada para criar ambientes isolados de Python.  
 ```
-pip install virtualenv
+$ pip install virtualenv
 ```
 
 
@@ -44,7 +44,7 @@ $ python3 informant.py
 
 Para desabilitar o virtualenv  
 ```
-deactivate
+$ deactivate
 ```
 
 
