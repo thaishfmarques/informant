@@ -5,8 +5,8 @@
 
 # system imports
 import platform
-import subprocess  # for executing a shell command
-from os import system,name 
+import subprocess 
+from os import system
 from time import sleep
 from socket import gethostname
 

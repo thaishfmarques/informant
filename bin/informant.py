@@ -9,8 +9,6 @@
 Todas as informações de utilização do programa e funções estão disponíveis em
 informant/bin/doc e informant/README.md
 
-Comentários gerais em inglês por questões de comunidade
-Demais comentários em português por questões acadêmicas
 '''
 
 import banner
