@@ -14,7 +14,7 @@ from socket import gethostname
 import whois, geoip, portscan, shodanz # local source imports
 
 
-VERSION = 'v0.8'
+VERSION = 'v0.9'
 
 
 # clean console screen
