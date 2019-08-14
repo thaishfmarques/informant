@@ -97,7 +97,7 @@ _**os.path**_ importa do módulo _os_  o pacote _path_ que habilita a funções 
  Na versão free aceita apenas buscas simples.   
  
 ### Variáveis
-_**search:**_ pesquisa parâmetros simples no shodan
+_**search:**_ pesquisa parâmetros simples no shodan    
 _**results:**_ retorna o resultado da busca pela API
 _**folder_path + save_to_folder:**_ recebe informações do caminho onde os dados serão gravados  
 
