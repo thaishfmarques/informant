@@ -88,4 +88,8 @@ A utilização da ferramenta deve ser feita somente em rede local própria.
 
 : @thaishfmarques
 
+## Contributed
+- Adner Souza  
+- Deovanir  
+
 > Written with [StackEdit](https://stackedit.io/).
